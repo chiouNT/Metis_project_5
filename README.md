@@ -27,4 +27,4 @@ In pre-processing the data, there are 2 steps. The first step is to remove all d
 ## Communication
 * The analysis showed that most abstracts in the GEO database have the low similarity. Only 10% of them are clustered well with kMeans clustering strategy.
 
-![alt text](https://github.com/chiouNT/NLP/blob/main/Image/tSNE_kMeans.png)
+![alt text](https://github.com/chiouNT/NLP/blob/master/Image/tSNE_kMeans.png)
