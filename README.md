@@ -34,7 +34,7 @@ During pre-processing the data, there are 2 steps. The first step is to remove a
 
 * Abstracts are also clustered into 15 topics with the strategy II. Because NMF topic modeling is performed prior kMeans clustering, the differences of the similary (distances) among clusters are much smaller.
 
-![alt text](https://github.com/chiouNT/NLP/blob/master/Image/tSNE_kMeans_2.jpg)
+![alt text](https://github.com/chiouNT/NLP/blob/master/Image/tSNE_kMeans2.jpg)
 ![alt text](https://github.com/chiouNT/NLP/blob/master/Image/kMeans_2_distances.jpg)
 
 * The abstracts in the same clusters will be further filtered based on their associated datasets. The datasets from similar topics, such as covid or cancers, will be useful for identifying the new biomarkers or drug taragets.
