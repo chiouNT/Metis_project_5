@@ -6,7 +6,7 @@ The gene expression or DNA profiling results of the research paper are usually s
 
 ## Data
 
-The data is the abstracts scraped from the GEO database API. There are around 3000 abstracts
+The data is the abstracts scraped from the GEO database API (https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200209437&version=2.0). There are around 3000 abstracts.
 
 ## Preprocessing and model building
 
@@ -27,15 +27,12 @@ During pre-processing the data, there are 2 steps. The first step is to remove a
 *	Visualization via Matplotlib and Seaborn
 
 ## Communication
-* Abstracts are clustered into 15 topics with the strategy I. Because the abstracts in GEO datasets are very heterogeneous, one cluster having the ~5 fold less similarity (distances) than other clusters.
 
-![alt text](https://github.com/chiouNT/NLP/blob/master/Image/tSNE_kMeans.jpg)
-![alt text](https://github.com/chiouNT/NLP/blob/master/Image/kMeans_1_distances.jpg)
-
-* Abstracts are also clustered into 15 topics with the strategy II. Because NMF topic modeling is performed prior kMeans clustering, the differences of the similary (distances) among clusters are much smaller.
+* The abstracts are clustered into 15 topics with the strategy II. One cluster, which is related to stem cells and chromatin, contains half amounts of the abstracts has the lowerest similairty of the abstracts within the cluster. All other clusters contain ~50-200 abstracts have higher similarity of the abstracts within the clusters. 
 
 ![alt text](https://github.com/chiouNT/NLP/blob/master/Image/tSNE_kMeans2.jpg)
 ![alt text](https://github.com/chiouNT/NLP/blob/master/Image/kMeans_2_distances.jpg)
+![alt text](https://github.com/chiouNT/NLP/blob/master/Image/kMeans_2.jpg)
 
-* The abstracts in the same clusters will be further filtered based on their associated datasets. The datasets from similar topics, such as covid or cancers, will be useful for identifying the new biomarkers or drug taragets.
+* The abstracts in the same clusters will be further filtered based on their associated datasets. The datasets with the similar topics and experimental designs, such as whole blood sequencing from different covid patient cohorts, will be useful for identifying the new biomarkers or drug taragets.
 
