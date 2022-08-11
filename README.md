@@ -6,7 +6,7 @@ The gene expression or DNA profiling results of the research paper are usually s
 
 ## Data
 
-The data is the abstracts scraped from the GEO database API (https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200209437&version=2.0). There are around 3000 abstracts.
+The data is the abstracts scraped from the GEO database API (https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds). There are around 3000 abstracts.
 
 ## Preprocessing and model building
 
