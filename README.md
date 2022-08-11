@@ -1,4 +1,4 @@
-# Recommender of the GEO datasets based on the NLP analysis of the literatures
+# Recommender of the GEO datasets based on NLP analysis of their associated abstracts 
 
 ## Abstract
 
